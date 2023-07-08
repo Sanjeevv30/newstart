@@ -43,23 +43,64 @@
 //     li[1].style.backgroundColor = "#f4f4f4";
 // }
 //QUERY SELECTOR//
-var header = document.querySelector('#main-header');
-header.style.borderBottom = 'solid 4px #ccc';
+// var header = document.querySelector('#main-header');
+// header.style.borderBottom = 'solid 4px #ccc';
 
-var input = document.querySelector('input');
-input.value = 'Hello';
+// var input = document.querySelector('input');
+// input.value = 'Hello';
  
-var submit = document.querySelector('input[type = "submit" ]');
-submit.value = "SEND";
+// var submit = document.querySelector('input[type = "submit" ]');
+// submit.value = "SEND";
 
-var secondItem = document.querySelector('.list-group-item:nth-child(2)');
-secondItem.style.backgroundColor = 'green';
+// var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.backgroundColor = 'green';
 
-var item = document.querySelector('.list-group-item');
-item.style.color = 'red'
+// var item = document.querySelector('.list-group-item');
+// item.style.color = 'red'
 
-//document.querySelector("#myElement").style.display = "none";
+// //document.querySelector("#myElement").style.display = "none";
 
-var thirdItem =  document.querySelector('.list-group-item:nth-child(3)');
-thirdItem.style.visibility = 'hidden';
+// var thirdItem =  document.querySelector('.list-group-item:nth-child(3)');
+// thirdItem.style.visibility = 'hidden';
 
+
+// DOM treversing;
+
+
+var itemList = document.querySelector('#items');
+//parentNode
+console.log(itemList.parentNode);
+itemList.parentNode.style.backgroundColor = '#f4f4f4';
+console.log(itemList.parentNode.parentNode.parentNode);
+//parentElement
+console.log(itemList.parentElement);
+itemList.parentElement.style.backgroundColor = '#f4f4f4';
+console.log(itemList.parentElement.parentElement.parentElement);
+
+//childNodes
+console.log(itemList.childNodes);
+
+
+console.log(itemList.children);
+console.log(itemList.children[1]);
+itemList.children[1].style.backgroundColor = 'yellow';
+
+//FirstChild
+console.log(itemList.firstChild);
+//FirstElementChild
+console.log(itemList.firstElementChild);
+itemList.firstElementChild.textContent = 'Hello 1';
+
+//LastChild
+console.log(itemList.lastChild);
+//LastElementChild
+console.log(itemList.lastElementChild);
+itemList.lastElementChild.textContent = 'Hello 4';
+
+
+// nextSibling
+
+console.log(itemList.nextSibling);
+// nextElementSibling
+
+console.log(itemList.nextElementSibling);
