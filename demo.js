@@ -13,7 +13,7 @@
 // var header = document.getElementById('main-header');
 // header.style.borderBottom = 'solid 3px #000';
 // GET ELEMENT BY CLASS;
-var items = document.getElementsByClassName('list-group-item');
+//var items = document.getElementsByClassName('list-group-item');
 // console.log(items);
 // console.log(items[1]);
 // items[1].textContent = 'Hello 2';
@@ -26,20 +26,40 @@ var items = document.getElementsByClassName('list-group-item');
 // for(let i=0;i<items.length;i++){
 //     items[1].style.backgroundColor = "#f4f4f4";
 // }
-items[4].style.fontWeight = 'bold';
-// GET ELEMENT BY TAGNAME;
-var li = document.getElementsByTagName('li');
-console.log(li);
-console.log(li[1]);
-li[1].textContent = 'Hello 2';
-// li[0].style.fontWeight = 'bold';
-// li[1].style.fontWeight = 'bold';
-// li[2].style.fontWeight = 'bold';
-// li[3].style.fontWeight = 'bold';
-// li[4].style.fontWeight = 'bold';
-li[2].style.backgroundColor = 'green';
+// items[4].style.fontWeight = 'bold';
+// // GET ELEMENT BY TAGNAME;
+// var li = document.getElementsByTagName('li');
+// console.log(li);
+// console.log(li[1]);
+// li[1].textContent = 'Hello 2';
+// // li[0].style.fontWeight = 'bold';
+// // li[1].style.fontWeight = 'bold';
+// // li[2].style.fontWeight = 'bold';
+// // li[3].style.fontWeight = 'bold';
+// // li[4].style.fontWeight = 'bold';
+// li[2].style.backgroundColor = 'green';
 
-for(let i=0;i<li.length;i++){
-    li[1].style.backgroundColor = "#f4f4f4";
-}
+// for(let i=0;i<li.length;i++){
+//     li[1].style.backgroundColor = "#f4f4f4";
+// }
+//QUERY SELECTOR//
+var header = document.querySelector('#main-header');
+header.style.borderBottom = 'solid 4px #ccc';
+
+var input = document.querySelector('input');
+input.value = 'Hello';
+ 
+var submit = document.querySelector('input[type = "submit" ]');
+submit.value = "SEND";
+
+var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+secondItem.style.backgroundColor = 'green';
+
+var item = document.querySelector('.list-group-item');
+item.style.color = 'red'
+
+//document.querySelector("#myElement").style.display = "none";
+
+var thirdItem =  document.querySelector('.list-group-item:nth-child(3)');
+thirdItem.style.visibility = 'hidden';
 
