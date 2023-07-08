@@ -104,3 +104,25 @@ console.log(itemList.nextSibling);
 // nextElementSibling
 
 console.log(itemList.nextElementSibling);
+
+//previousSibling
+
+console.log(itemList.previousSibling);
+// nextElementSibling
+
+console.log(itemList.previousElementSibling);
+itemList.previousElementSibling.style.color = 'green';
+
+//createElement
+
+var newDiv = document.createElement('div');
+// Add class
+newDiv.className= 'hello';
+
+newDiv.id = 'hello1';
+
+// Add Attributes
+newDiv.setAttribute('title','Hello Div');
+
+// Add text to div
+newDiv.appendChild(newDivText);
