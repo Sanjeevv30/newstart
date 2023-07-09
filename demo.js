@@ -67,62 +67,62 @@
 // DOM treversing;
 
 
-var itemList = document.querySelector('#items');
-//parentNode
-console.log(itemList.parentNode);
-itemList.parentNode.style.backgroundColor = '#f4f4f4';
-console.log(itemList.parentNode.parentNode.parentNode);
-//parentElement
-console.log(itemList.parentElement);
-itemList.parentElement.style.backgroundColor = '#f4f4f4';
-console.log(itemList.parentElement.parentElement.parentElement);
+// var itemList = document.querySelector('#items');
+// //parentNode
+// console.log(itemList.parentNode);
+// itemList.parentNode.style.backgroundColor = '#f4f4f4';
+// console.log(itemList.parentNode.parentNode.parentNode);
+// //parentElement
+// console.log(itemList.parentElement);
+// itemList.parentElement.style.backgroundColor = '#f4f4f4';
+// console.log(itemList.parentElement.parentElement.parentElement);
 
-//childNodes
-console.log(itemList.childNodes);
-
-
-console.log(itemList.children);
-console.log(itemList.children[1]);
-itemList.children[1].style.backgroundColor = 'yellow';
-
-//FirstChild
-console.log(itemList.firstChild);
-//FirstElementChild
-console.log(itemList.firstElementChild);
-itemList.firstElementChild.textContent = 'Hello 1';
-
-//LastChild
-console.log(itemList.lastChild);
-//LastElementChild
-console.log(itemList.lastElementChild);
-itemList.lastElementChild.textContent = 'Hello 4';
+// //childNodes
+// console.log(itemList.childNodes);
 
 
-// nextSibling
+// console.log(itemList.children);
+// console.log(itemList.children[1]);
+// itemList.children[1].style.backgroundColor = 'yellow';
 
-console.log(itemList.nextSibling);
-// nextElementSibling
+// //FirstChild
+// console.log(itemList.firstChild);
+// //FirstElementChild
+// console.log(itemList.firstElementChild);
+// itemList.firstElementChild.textContent = 'Hello 1';
 
-console.log(itemList.nextElementSibling);
+// //LastChild
+// console.log(itemList.lastChild);
+// //LastElementChild
+// console.log(itemList.lastElementChild);
+// itemList.lastElementChild.textContent = 'Hello 4';
 
-//previousSibling
 
-console.log(itemList.previousSibling);
-// nextElementSibling
+// // nextSibling
 
-console.log(itemList.previousElementSibling);
-itemList.previousElementSibling.style.color = 'green';
+// console.log(itemList.nextSibling);
+// // nextElementSibling
 
-//createElement
+// console.log(itemList.nextElementSibling);
 
-var newDiv = document.createElement('div');
-// Add class
-newDiv.className= 'hello';
+// //previousSibling
 
-newDiv.id = 'hello1';
+// console.log(itemList.previousSibling);
+// // nextElementSibling
 
-// Add Attributes
-newDiv.setAttribute('title','Hello Div');
+// console.log(itemList.previousElementSibling);
+// itemList.previousElementSibling.style.color = 'green';
 
-// Add text to div
-newDiv.appendChild(newDivText);
+// //createElement
+
+// var newDiv = document.createElement('div');
+// // Add class
+// newDiv.className= 'hello';
+
+// newDiv.id = 'hello1';
+
+// // Add Attributes
+// newDiv.setAttribute('title','Hello Div');
+
+// // Add text to div
+// newDiv.appendChild(newDivText);
